@@ -385,6 +385,7 @@ some-fact
     
     nav {
       align-items: center;
+      flex-direction: column;
     }
     .hide-on-pc{
         display: block;
@@ -392,9 +393,14 @@ some-fact
     header{
         padding: 15px;
     }
-    .nav-menu{
-        display: none;
+    .nav-menu>ul {
+        justify-content: center;
+        gap: 1em;
+        padding: 15px 0 0 0;
     }
+    /* .nav-menu{
+        display: none;
+    } */
     .banner{
         display: flex;
         flex-direction: column-reverse;
@@ -421,6 +427,9 @@ some-fact
     .box-text{
         width: 95%;
         text-align: center;
+    }
+    .cboxs{
+        margin-bottom: 10px;
     }
     .features {
         margin-top: 30px;
