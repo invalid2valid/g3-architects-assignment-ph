@@ -8,10 +8,13 @@
 /* body {
     margin: 0 15%;
 } */
+.hide-on-pc{
+    display: none;
+}
 
 header {
     background: rgba(255, 144, 14, 0.1);
-    padding: 50px 15%;
+    padding: 50px 100px;
 }
 
 /* ----------------
@@ -90,12 +93,12 @@ nav {
     main
 -------------- */
 main {
-    margin: 85px 15%;
+    margin: 85px 100px;
 }
 
 .quick-list {
     display: flex;
-    gap: 70px;
+    gap: 50px;
     justify-content: space-around;
     align-items: center;
 }
@@ -105,12 +108,15 @@ main {
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 24px;
 }
-
+.box-text{
+    width: 30%;
+}
 .box-text h2 {
     color: #131313;
     font-weight: 700;
     font-size: 45px;
     line-height: 53px;
+    
 }
 
 .c-gry {
@@ -138,7 +144,8 @@ main {
 .features {
     margin-top: 130px;
     display: flex;
-    justify-content: space-between;
+    /* gap: 100PX; */
+    justify-content: space-around;
 }
 
 .f-text {
@@ -182,7 +189,7 @@ main {
 }
 
 .f-image>img {
-    width: 30vw;
+    width: 550PX;
 }
 
 /*----------
@@ -190,7 +197,7 @@ main {
  -------------*/
 .b-button {
     text-align: center;
-    margin-top: -200px;
+    margin-top: -150px;
     margin-left: 400px;
 }
 
@@ -294,7 +301,9 @@ some-fact
     border: none;
     margin: 12px 0;
 }
-
+.s-btn:hover{
+    background: #727272;
+}
 .container {
     display: flex;
     justify-content: space-between;
@@ -354,6 +363,32 @@ some-fact
     padding: 38px 0;
     text-align: center;
     margin-bottom: 100px;
-    margin: 0 15%;
+    margin: 0 100px;
     margin-bottom: 100px;
 }
+
+
+.hide{
+    display: none;
+}
+
+/* ----------------------
+        media q
+---------------------- */
+
+@media only screen and (max-width: 576px) {
+    nav {
+      align-items: center;
+    }
+    .hide-on-pc{
+        display: block;
+    }
+    header{
+        padding: 15px;
+    }
+    
+  }
+  main {
+    margin: 10px 15px;
+}
+  
